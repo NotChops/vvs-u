@@ -1,0 +1,386 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/cat"))() --you can go into the github link and copy all of it and modify it for yourself.
+local Window = Library:CreateWindow("EYE V2", Vector2.new(492, 598), Enum.KeyCode.RightControl) --you can change your UI keybind
+local AimingTab = Window:CreateTab("Test Tab") --you can rename this tab to whatever you want --you can also change the tabs code, for example "AimingTab" can be changed to "FunnyCoolTab" etc.
+
+
+local testSection = AimingTab:CreateSector("First Section", "left")  --you can  change the section code, for example "testsection" can be changed to "FunnyCoolSection" etc.
+
+testSection:AddToggle("Toggle", false, function(first)
+    print("ejejejejejeje")
+end)
+
+testSection:AddButton("Button", function(IhateGayPeople)
+    print("button")
+end)
+
+testSection:AddSlider("Slider", 0, 120, 2000, 1, function(State)
+    
+end)
+
+testSection:AddTextbox("textbox", nil, function(State)
+
+end)
+
+testSection:AddDropdown("Dropdown", {"AH", "ytytyt", "rrro", "awhjdajksd"}, "AH", true, function(dropdown)
+
+end)
+
+local ColorToggle = testSection:AddToggle("ColorPicker w/Toggle", false, function(e)
+
+end)
+
+ColorToggle:AddColorpicker(Color3.fromRGB(75, 0,130), function(ztx)
+   
+end)
+
+local ToggleBind = testSection:AddToggle("Keybind w/Toggle", false, function(e)
+
+end)
+
+ToggleBind:AddKeybind()
+
+AimingTab:CreateConfigSystem("right") --this is the config system
+
+local TeleportTab = Window:CreateTab("Teleport")
+local tpsection = TeleportTab:CreateSector("NPCs", "left")  --you can  change the section code, for example "testsection" can be changed to "FunnyCoolSection" etc.
+
+
+tpsection:AddButton("Kai", function(IhateGayPeople)
+    local teleport_table = {
+--KAI NPC
+    location1 = Vector3.new(763.267578125, 125.71009826660156, -4659.4404296875), -- your desired position
+    location2 = Vector3.new()  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+local tpsection2 = TeleportTab:CreateSector("WAYSTONEs", "right")
+
+tpsection2:AddButton("Deepforest1Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(2181.88818359375, 155.66354370117188, -1849.626953125), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Deepforest2Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(1133.764404296875, 144.66915893554688, -2502.49072265625), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Deepforest3Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(2615.952392578125, 121.6691665649414, -2587.40283203125), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Desert1Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(-1219.086669921875, 324.591552734375, 684.24267578125), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Desert2Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(-1275.702392578125, 314.7851867675781, -272.0736389160156), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Desert3Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(-2094.791748046875, 297.59478759765625, 184.36509704589844), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Desert4Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(-2167.153076171875, 609.6549682617188, -722.68896484375), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Forest1Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(1773.548828125, 118.4777603149414, -617.2544555664062), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Forest2Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(-113.61598205566406, 172.92913818359375, 203.93280029296875), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Forest3Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(2743.5048828125, 287.0509948730469, 115.0159683227539), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Forest4Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(1163.505615234375, 191.88560485839844, -734.6102294921875), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Tundra1Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(3836.20654296875, 620.9088745117188, -146.89779663085938), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Tundra2Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(4833.82421875, 690.4481811523438, 1399.513427734375), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Tundra3Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(5555.21630859375, 1345.4522705078125, 47.87493896484375), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection2:AddButton("Tundra4Waystone", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(5428.88525390625, 1113.45458984375, 832.739501953125), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
