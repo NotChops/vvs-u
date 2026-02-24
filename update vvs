@@ -45,7 +45,7 @@ local TeleportTab = Window:CreateTab("Teleport")
 local tpsection = TeleportTab:CreateSector("NPCs", "left")  --you can  change the section code, for example "testsection" can be changed to "FunnyCoolSection" etc.
 
 
-tpsection:AddButton("Kai", function(IhateGayPeople)
+tpsection:AddButton("Kai (SHURA)", function(IhateGayPeople)
     local teleport_table = {
 --KAI NPC
     location1 = Vector3.new(763.267578125, 125.71009826660156, -4659.4404296875), -- your desired position
@@ -68,9 +68,30 @@ end
 bypass_teleport(teleport_table.location1)
 end)
 
-tpsection:AddButton("Marulu ", function(IhateGayPeople)
+tpsection:AddButton("Marulu (SIMURIAN) ", function(IhateGayPeople)
     local teleport_table = {
     location1 = Vector3.new(3947.279296875, 553.2939453125, -545.3173828125), -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(22,Enum.EasingStyle.Linear)
+local lp = game.Players.LocalPlayer
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+bypass_teleport(teleport_table.location1)
+end)
+
+tpsection:AddButton("Sora (WARRIOR 1) ", function(IhateGayPeople)
+    local teleport_table = {
+    location1 = Vector3.new(-1817.8370361328125, 315.22198486328125, -227.3769989013672), -- your desired position
 }
 
 local tween_s = game:GetService('TweenService')
